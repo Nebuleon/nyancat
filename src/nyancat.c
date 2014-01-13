@@ -95,7 +95,11 @@ char * colors[256] = {NULL};
  * For most modes, we output spaces, but for some
  * we will use block characters (or even nothing)
  */
+#ifdef HALF_WIDTH
+char * output = " ";
+#else
 char * output = "  ";
+#endif
 
 /*
  * Are we currently in telnet mode?
