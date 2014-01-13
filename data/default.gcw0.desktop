@@ -6,4 +6,5 @@ Comment=Display Nyan Cat on your console
 Exec=/bin/sh -c +i -m "./nyancat -W 52 -H 23 & read line; kill %1"
 Icon=nyancat
 Terminal=true
+X-OD-Manual=manual-en.txt
 Categories=applications;

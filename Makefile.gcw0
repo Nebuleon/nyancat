@@ -39,6 +39,6 @@ install: all
 	gzip -9 -c < nyancat.1 > /usr/share/man/man1/nyancat.1.gz
 
 opk: all
-	mksquashfs data/default.gcw0.desktop data/nyancat.png src/nyancat nyancat.opk -noappend -all-root -no-exports -no-xattrs
+	mksquashfs data/default.gcw0.desktop data/nyancat.png src/nyancat data/manual-en.txt nyancat.opk -noappend -all-root -no-exports -no-xattrs
 
 .PHONY: FORCE all clean check dist distcheck install opk
